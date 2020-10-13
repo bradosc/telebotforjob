@@ -10,7 +10,7 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def send_towns(message):
-    photo = open('../img/national.png', 'rb')
+    photo = open('./img/national.png', 'rb')
     markup = types.InlineKeyboardMarkup()
     info = types.InlineKeyboardButton(text='Інформація', callback_data="info")
     target = types.InlineKeyboardButton(text='Ціль', callback_data="target")
