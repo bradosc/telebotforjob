@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=denis
+Group=denis
+
+WorkingDirectory=/home/denis/telebotforjob/
+Environment="PYTHONPATH=/home/denis/telebotforjob/"
+ExecStart=/home/denis/telebotforjob/.venv/bin/python /home/denis/telebotforjob/bot/main.py
+
+[Install]
+WantedBy=multi-user.target
