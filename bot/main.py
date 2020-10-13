@@ -123,12 +123,12 @@ def callback_inline(call):
                          "▪Доповнити інформацію можли при особисті зустрічі або через онлайн спілкування"'\n'
                          )
     elif call.data == "Send_Doc_File":
-        bot.send_document(chat_id=call.message.chat.id, data=open("../file/rezume.doc", "rb")
+        bot.send_document(chat_id=call.message.chat.id, data=open("./file/rezume.doc", "rb")
                           )
         bot.send_message(chat_id=call.message.chat.id, text="Готове резюме для друку:"
                          )
     elif call.data == "Send_Document_File":
-        bot.send_document(chat_id=call.message.chat.id, data=open("../file/document/Document.rar","rb"
+        bot.send_document(chat_id=call.message.chat.id, data=open("./file/document/Document.rar","rb"
                                                                   )
                           )
 
